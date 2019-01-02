@@ -14,7 +14,7 @@ onset_env = librosa.onset.onset_strength(y , sr=sr , aggregate=np.median)
 tempo, beats = librosa.beat.beat_track(onset_envelope=onset_env,sr=sr)
 tempo
 #creating the graph
-mport matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 hop_length = 512
 plt.figure(figsize=(8, 4))
 times = librosa.frames_to_time(np.arange(len(onset_env)),sr=sr, hop_length=hop_length)
