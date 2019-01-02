@@ -15,3 +15,8 @@ Beat detection and cut to music video creator (python based, music beat detectio
 - Overlay the new video on top of audio
 - Export an mp4 file
 
+## Librosa sample and official github Account
+https://github.com/librosa/librosa/blob/master/examples/LibROSA%20demo.ipynb
+
+## FFMPEG example and how to use it:
+https://github.com/kkroening/ffmpeg-python/blob/master/examples/README.md
