@@ -1,5 +1,6 @@
 # First, load some audio 
 
+import librosa
 import matplotlib.pyplot as plt
 y, sr = librosa.load("UltraCat.mp3")
 D = np.abs(librosa.stft(y))
