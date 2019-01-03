@@ -1,4 +1,4 @@
-# First, load some audio and plot the spectrogram
+# First, load some audio 
 
 import matplotlib.pyplot as plt
 y, sr = librosa.load('UltraCat.mp3')
