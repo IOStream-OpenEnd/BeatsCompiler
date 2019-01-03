@@ -1,7 +1,7 @@
 # First, load some audio 
 
 import matplotlib.pyplot as plt
-y, sr = librosa.load('UltraCat.mp3')
+y, sr = librosa.load("UltraCat.mp3")
 D = np.abs(librosa.stft(y))
 times = librosa.frames_to_time(np.arange(D.shape[1]))
 plt.figure()
