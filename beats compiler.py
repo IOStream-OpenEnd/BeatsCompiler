@@ -23,7 +23,7 @@ while True:
 	else:
 		print("Path is given correctly")
 		break
-	finally
+	finally:
 		print("Rendering Starts")
 
 
