@@ -7,24 +7,26 @@ from scipy.io.wavfile import write
 print(format('.............This is a program used for beat detection................','^40'))
 
 #reading of video and taking some temmporary variables
-while True:
-	try:
-		pathl = input("Enter the path of the location of a file where the action is stored and executed\nLike   C:\\\\users\\\\rajesh\\\\file_name")
 
-		path_video = input("Enter the location of the video file which has to be processed \nNote that the file ends with .mp4\nEXAMPLE      C:\\\\users\\\\rajesh\\\\file_name\\\\video_name.mp4      :")
-		path_audio = pathl + '\\audio.wav'
-		path_videot = pathl + '\\muted_video.mov'
+pathl = input("Enter the path of the location of a file where the action is stored and executed\nLike   C:\\\\users\\\\rajesh\\\\file_name")
+print('                                                                                                 ')
+print('                                                                                                 ')
 
-		subprocess.call(['ffmpeg','-i',path_video,'-c:v','copy','-an',path_videot])
-		subprocess.call(['ffmpeg','-i',path_video,'-c:v','copy',path_audio])
-	except:
-		print("Looks like you didn't wrote the path correctly, please try again")
-		continue
-	else:
-		print("Path is given correctly")
-		break
-	finally:
-		print("Rendering Starts")
+path_video = input("Enter the location of the video file which has to be processed \nNote that the file ends with .mp4\nEXAMPLE      C:\\\\users\\\\rajesh\\\\file_name\\\\video_name.mp4      :")
+print('                                                                                                 ')
+print('                                                                                                 ')
+path_audio = pathl + '\\audio.wav'
+path_videot = pathl + '\\muted_video.mov'
+
+subprocess.call(['ffmpeg','-i',path_video,'-c:v','copy','-an',path_videot])
+subprocess.call(['ffmpeg','-i',path_video,'-c:v','copy',path_audio])
+print("Looks like you didn't wrote the path correctly, please try again")
+print('                                                                                                 ')
+print('                                                                                                 ')
+print("Path is given correctly")
+print('                                                                                                 ')
+print('                                                                                                 ')
+print("Rendering Starts")
 
 
 path = path_audio
