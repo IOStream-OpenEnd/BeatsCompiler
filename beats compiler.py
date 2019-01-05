@@ -8,7 +8,7 @@ print(format('.............This is a program used for beat detection............
 
 #reading of video and taking some temmporary variables
 
-pathl = input("Enter the path of the location of a file where the action is stored and executed\nLike   C:\\\\users\\\\rajesh\\\\file_name  \n (No spaces betweeen the path!)")
+pathl = input("Enter the path of the location of a file where the action is stored and executed\nLike   C:\\\\users\\\\rajesh\\\\file_name")
 print('                                                                                                 ')
 print('                                                                                                 ')
 
@@ -20,6 +20,7 @@ path_videot = pathl + '\\muted_video.mov'
 
 subprocess.call(['ffmpeg','-i',path_video,'-c:v','copy','-an',path_videot])
 subprocess.call(['ffmpeg','-i',path_video,'-c:v','copy',path_audio])
+print("Looks like you didn't wrote the path correctly, please try again")
 print('                                                                                                 ')
 print('                                                                                                 ')
 print("Path is given correctly")
